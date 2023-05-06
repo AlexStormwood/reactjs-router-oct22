@@ -4,6 +4,8 @@ import { AboutPage } from './pages/AboutPage';
 import { HomePage} from './pages/HomePage';
 import { ContactPage } from './pages/ContactPage';
 import {Routes, Route, Outlet} from 'react-router-dom';
+import { ArticlePage } from './pages/ArticlesPage';
+import { WatchPage } from './pages/WatchPage';
 
 function App() {
   return (
@@ -28,6 +30,10 @@ function App() {
 			<Route path="contact" element={<ContactPage />} />
 		</Route>
 
+
+		<Route path="/articles/:id/media/:photoId" element={<ArticlePage />} />
+
+		<Route path="/watch" element={<WatchPage />} />
 
 
 	  </Routes>
